@@ -12,7 +12,7 @@ O VirtualBox é um virtualizador completo de uso geral. É um ambiente virtual q
 
 Para configurar o VirtualBox precisamos baixar uma imagem de algum sistema operacional. 
 
-O Projeto Debian é uma associação de indivíduos que têm como causa comum criar um sistema operacional livre. O sistema operacional criado é chamado Debian. 
+O Projeto Debian é uma associação de indivíduos que têm como causa comum criar um sistema operacional livre. O sistema operacional criado é chamado Debian. Os sistemas Debian atualmente usam o kernel Linux ou o kernel FreeBSD.
 
 - [Link para instalação do Debian](https://www.debian.org/distrib/).
 - [Saiba mais sobre o Debian](https://www.debian.org/).
