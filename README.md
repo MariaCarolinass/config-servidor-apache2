@@ -16,3 +16,4 @@ O Projeto Debian é uma associação de indivíduos que têm como causa comum cr
 
 - [Link para instalação do Debian](https://www.debian.org/distrib/).
 - [Saiba mais sobre o Debian](https://www.debian.org/).
+- [Saiba mais sobre Linux em geral: Guia Foca Linux](https://www.guiafoca.org/guiaonline/iniciante/).
