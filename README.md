@@ -61,3 +61,55 @@ O Projeto Debian é uma associação de indivíduos que têm como causa comum cr
 26. Selecione “Sim” para instalar o GRUB para inicializar o Sistema Operacional.
 27. Indique o dispositivo na lista "/dev/sda", para instalação do carregador.
 28. Selecione “Continuar” para encerrar a instalação.
+
+
+## Configurando e instalando o servidor web Apache 2
+
+Com a máquina virtual devidamente criada no VirtualBox e funcionando com o sistema operacional Debian. Inicialize a máquina virtual e abra o terminal para começar a instalação do servidor Apache.
+
+1. Entre como usuário (root) administrador digitando o comando abaixo e logo após, digite sua senha:
+
+`$ su`
+
+2. Instale o servidor Apache:
+
+`# apt-get install apache2`
+
+3. Para verificar se o Apache está funcionando:
+
+`# systemctl status`
+
+4. Na máquina virtual, clique em "configurações" > Rede > Altere a rede para Conectado a: Host-only. Depois volte ao terminal, para atualizar as configurações de rede:
+
+`# /sbin/dhclient`
+
+5. Verifique qual é o endereço IP da sua máquina com o comando abaixo:
+
+`# ip addr`
+
+O seu endereço IP está na linha "inet".
+
+6. Acesse o seu endereço IP, digitando ele em seu navegador web de preferência e confira se irá aparecer a página inicial do Apache.
+
+### Editando a página inicial
+
+No terminal, entre para o seguinte diretório:
+
+`# cd /var/www/html`
+
+Mova o arquivo "index.html":
+
+`# mv index.html _index.html`
+
+Agora edite o arquivo "_index.html". Obs: Você precisa editá-lo como um usuário administrador, no seu editor de texto de preferência. Utilizei o editor "gedit", caso ele não esteja instalado: `# apt-get install gedit`.
+
+Apague todo o código html no arquivo _index.html e digite um novo. Por exemplo:
+
+```
+<html>
+<header><title>Teste</title></header>
+<body><h1>Editando um site</h1></body>
+</html>
+```
+
+Finalmente, verifique se a página foi editada digitando o endereço IP da máquina em um navegador web. Caso seja preciso, reiniciei o Apache: `systemctl restart apache2`.
