@@ -113,3 +113,68 @@ Apague todo o código html no arquivo _index.html e digite um novo. Por exemplo:
 ```
 
 Finalmente, verifique se a página foi editada digitando o endereço IP da máquina em um navegador web. Caso seja preciso, reiniciei o Apache: `systemctl restart apache2`.
+
+
+## Configurando dois sites no mesmo servidor
+
+No terminal, você precisa acessar o diretório `/var/www/` e criar duas pastas para salvar os dois sites:
+
+```
+# mkdir site1.site.com
+# mkdir site2.site.com
+```
+
+Então, entrar em cada uma das pastas, criar e editar um arquivo `.html` para cada:
+
+```
+# cd site1.site.com
+# nano index.html
+# cd site2.site.com
+# nano index.html
+```
+
+OBS: Não esqueça de digitar algo nos arquivos criados.
+
+Agora vamos sair do diretório que estamos com `..cd` (digitar 2x) e criar os aquivos de configurações para esses sites:
+
+```
+# cd /etc/apache2/sistes-available/
+# touch site1.site.com.conf
+# touch site2.site.com.conf
+```
+
+Você deve digitar o seguinte código abaixo e adpatá-lo para cada um dos arquivos: 
+
+Utilize `nano site1.site.com.conf` para abrir edição.
+
+```
+<VirtualHost *:80>
+  ServerName site1.site.com
+  DocumentRoot /var/www/site1.site.com
+</VirtualHost>
+```
+
+Ao terminar de salvar os dois arquivos de configurações, atualize os arquivos do site com o comando:
+
+```
+# /sbin/a2ensite site1.site.com
+# /sbin/a2ensite site2.site.com
+```
+
+Caso precise reiniciar o Apache2: `systemctl reload apach2` | `systemctl restart apach2`.
+
+Finalmente, entre no seu gerenciador de arquivos e encontre o aquivo Host, pesquisando pelo seguinte diretório:
+
+```
+No Linux: /etc/hosts
+Windows: c:\Windows\System32\drivers\etc\hosts
+```
+
+Entre no arquivo hosts como administrador e na última linha do arquivo digite:
+
+```
+<Número-do-seu-endereço-IP>   site1.site.com
+<Número-do-seu-endereço-IP>   site2.site.com
+```
+
+Agora, os sites podem ser acessados digitando o endereço IP em um navegador.
