@@ -40,13 +40,20 @@ O Projeto Debian é uma associação de indivíduos que têm como causa comum cr
 ### Criando a máquina virtual
 
 1. Clicar em "Novo" para criar a máquina virtual.
-2. Escolher o nome do sistema operacional, tipo de sistema operacional "Linux" e a versão da imagem escolhida "Debian 32-bit" ou "Debian 64-bit".
-3. O tamanho da memória deve continuar na opção recomendada de 1024MB para um computador com 2GB ou mais de memória.
-4. Deixar marcado “Criar um novo disco rígido virtual agora”.
-5. Escolher um arquivo do tipo "VDI (VirtualBox Disk Image)" para a criação do disco rígido.
-6. Para otimização de processamento, o armazenamento em disco rígido físico será de tamanho fixo.
-7. O disco criado terá o tamanho recomendado de 8GB.
-8. Por fim, a máquina será criada e após a sua finalização devemos clicar em "Iniciar" da máquina virtual.
+
+3. Escolher o nome do sistema operacional, tipo de sistema operacional "Linux" e a versão da imagem escolhida "Debian 32-bit" ou "Debian 64-bit".
+
+4. O tamanho da memória deve continuar na opção recomendada de 1024MB para um computador com 2GB ou mais de memória.
+
+5. Deixar marcado “Criar um novo disco rígido virtual agora”.
+
+6. Escolher um arquivo do tipo "VDI (VirtualBox Disk Image)" para a criação do disco rígido.
+
+7. Para otimização de processamento, o armazenamento em disco rígido físico será de tamanho fixo.
+
+8. O disco criado terá o tamanho recomendado de 8GB.
+
+9. Por fim, a máquina será criada e após a sua finalização devemos clicar em "Iniciar" da máquina virtual.
 
 ### Instalando o Debian na máquina virtual criada
 
