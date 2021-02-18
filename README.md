@@ -119,29 +119,29 @@ O Projeto Debian é uma associação de indivíduos que têm como causa comum cr
 
 Com a máquina virtual devidamente criada no VirtualBox e funcionando com o sistema operacional Debian. Inicialize a máquina virtual e abra o terminal para começar a instalação do servidor Apache.
 
-1. Entre como usuário (root) administrador digitando o comando abaixo e logo após, digite sua senha:
+Entre como usuário (root) administrador digitando o comando abaixo e logo após, digite sua senha:
 
 `$ su`
 
-2. Instale o servidor Apache:
+Instale o servidor Apache:
 
 `# apt-get install apache2`
 
-3. Para verificar se o Apache está funcionando:
+Para verificar se o Apache está funcionando:
 
 `# systemctl status`
 
-4. Na máquina virtual, clique em "configurações" > Rede > Altere a rede para Conectado a: Host-only. Depois volte ao terminal, para atualizar as configurações de rede:
+Na máquina virtual, clique em "configurações" > Rede > Altere a rede para Conectado a: Host-only. Depois volte ao terminal, para atualizar as configurações de rede:
 
 `# /sbin/dhclient`
 
-5. Verifique qual é o endereço IP da sua máquina com o comando abaixo:
+Verifique qual é o endereço IP da sua máquina com o comando abaixo:
 
 `# ip addr`
 
 O seu endereço IP está na linha "inet".
 
-6. Acesse o seu endereço IP, digitando ele em seu navegador web de preferência e confira se irá aparecer a página inicial do Apache.
+Acesse o seu endereço IP, digitando ele em seu navegador web de preferência e confira se irá aparecer a página inicial do Apache.
 
 ### Editando a página inicial
 
