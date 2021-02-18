@@ -2,11 +2,25 @@
 
 Configurando um servidor Apache2 em uma máquina virtual.
 
+*******
+Sumário
+ 1. [Instalação da máquina virtual: VirtualBox](#virtualbox)
+ 2. [Instalação da imagem do sistema operacional: Debian](#debian)
+ 3. [Criação da máquina virtual mais instalação do Debian no VirtualBox](#ambiente)
+ 4. [Configurando e instalando o servidor web Apache 2](#apache2)
+ 5. [Configurando dois sites no mesmo servidor](#2sites)
+
+*******
+
+<div id='virtualbox'/>
+
 ## Instalação da máquina virtual: VirtualBox
 
 O VirtualBox é um virtualizador completo de uso geral. É um ambiente virtual que simula a experiência de usar um sistema operacional sem precisar fazer a sua instalação na máquina física. 
 
 - [Link para instalação do VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+
+<div id='debian'/>
 
 ## Instalação da imagem do sistema operacional: Debian
 
@@ -17,6 +31,8 @@ O Projeto Debian é uma associação de indivíduos que têm como causa comum cr
 - [Link para instalação do Debian](https://www.debian.org/distrib/).
 - [Saiba mais sobre o Debian](https://www.debian.org/).
 - [Saiba mais sobre Linux em geral: Guia Foca Linux](https://www.guiafoca.org/guiaonline/iniciante/).
+
+<div id='ambiente'/>
 
 ## Criação da máquina virtual mais instalação do Debian no VirtualBox
 
@@ -62,6 +78,7 @@ O Projeto Debian é uma associação de indivíduos que têm como causa comum cr
 27. Indique o dispositivo na lista "/dev/sda", para instalação do carregador.
 28. Selecione “Continuar” para encerrar a instalação.
 
+<div id='apache2'/>
 
 ## Configurando e instalando o servidor web Apache 2
 
@@ -114,6 +131,7 @@ Apague todo o código html no arquivo _index.html e digite um novo. Por exemplo:
 
 Finalmente, verifique se a página foi editada digitando o endereço IP da máquina em um navegador web. Caso seja preciso, reiniciei o Apache: `systemctl restart apache2`.
 
+<div id='2sites'/>
 
 ## Configurando dois sites no mesmo servidor
 
