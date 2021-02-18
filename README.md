@@ -58,32 +58,59 @@ O Projeto Debian é uma associação de indivíduos que têm como causa comum cr
 ### Instalando o Debian na máquina virtual criada
 
 1. Ao iniciar a máquina virtual pela primeira vez, clique na pasta amarela e "Acrescente" o arquivo da imagem do Deabian que foi baixada anteriomente. Depois ao escolher corretamente o arquivo, clique em "Iniciar".
+
 2. Aperte “Enter” para escolher a opção “Graphical install”.
+
 3. Selecione o idioma “Portuguese (Brazil)”.
+
 4. Logo em seguida, a localidade “Brasil”.
+
 5. Selecione o mapeamento do teclado “Português Brasileiro” e aguarde.
+
 6. Defina o nome da máquina.
+
 7. O nome de domínio fica em branco.
+
 8. Defina a senha de root. LEMBRE-SE DA SENHA.
+
 9. Digite a senha novamente, para confirmar.
+
 10. Digite o nome completo do usuário.
+
 11. Digite o nome de usuário para acessar o computador.
+
 12. Defina a senha para o usuário. LEMBRE-SE DA SENHA.
+
 13. Confirme a senha do usuário.
+
 14. Selecione a localidade para configurar o relógio.
+
 15. Selecione a opção de Particionamento do Disco “Assistido - usar o disco inteiro”.
+
 16. Selecione o disco disponível.
+
 17. Selecione a opção “Todos os arquivos em uma partição (para iniciantes)”.
+
 18. Selecione a opção “Finalizar o particionamento e escrever as mudanças no disco”.
+
 19. Confirme a ação "Sim" e aguarde a instalação do sistema básico.
+
 20. Selecione “Não” para não adicionar novos CDs ou DVDs.
+
 21. Escolha o país mais próximo para configurar o servidor "Brasil".
+
 22. Escolha um servidor "deb.debian.org".
+
 23. Não é necessário fazer configuração de proxy. Aperte “Enter” e aguarde a instalação.
+
 24. Selecione a opção “Não” para participar do concurso de instalação de pacotes.
+
 25. Utilizando as setas e a tecla “Espaço”, marque as opções "Xfce", "servidor de impressão", "utilitários de sistema padrão" e aperte “Enter”.
+
 26. Selecione “Sim” para instalar o GRUB para inicializar o Sistema Operacional.
+
 27. Indique o dispositivo na lista "/dev/sda", para instalação do carregador.
+
 28. Selecione “Continuar” para encerrar a instalação.
 
 <div id='apache2'/>
