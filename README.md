@@ -1,4 +1,4 @@
-# Tutorial 1
+# Prática 1
 
 Configurando um servidor Apache2 em uma máquina virtual.
 
