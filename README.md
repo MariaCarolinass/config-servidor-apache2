@@ -231,3 +231,6 @@ Entre no arquivo hosts como administrador e na última linha do arquivo digite:
 ```
 
 Agora, os sites podem ser acessados digitando o endereço IP em um navegador.
+
+*******
+**Confira também a prática 2: [Configurações de sistema na distribuição Linux Debian](https://github.com/MariaCarolinass/config-sistema-linux-debian)**
